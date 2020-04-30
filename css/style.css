@@ -1,45 +1,51 @@
-body{
-  margin-top:70px;
-  font-size:20px;
+body {
+  margin-top: 70px;
+  font-size: 20px;
   background-color: #F5F5F5;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family:Montserrat;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat;
 }
 
-.hello{
+
+.hello {
   font-size: 110px;
   font-weight: 800;
   margin-bottom: -30px;
 }
 
-.iam{
-  font-size: 50px;
-  
+.projects{
+    font-size: 110px;
+    font-weight: 800;
+    margin-bottom: 40px;
 }
 
-p{
-  font-family:Roboto;
+
+.iam {
+  font-size: 50px;
+
+}
+
+p {
+  font-family: Roboto;
   font-weight: 200;
   font-size: 20px;
 }
 
-.navbar-default{
-  background:rgba(255, 255, 255, 0.55);
-  border:0;
-  font-family:Poppins;
+.navbar-default {
+  background: rgb(255, 255, 255);
+  border: 0;
+  font-family: Roboto;
 }
 
-.navbar-brand{
-  font-size:20px;
-  color:#000 !important;
-  font-weight:bold;
-}
-
-img{
-margin-top: 20px;
-
+li {
+  text-align: right;
 }
 
 #header {
@@ -67,78 +73,53 @@ margin-top: 20px;
   transform: translateX(-50%) translateY(-50%);
 }
 
-#testimonial{
-  background:#f1f1f1;
-  padding: 50px 0 30px 0;
-  text-align:center;
-  margin-top:40px;
+hr{
+  width: 80%;
+  border: 1px solid #70707064;
 }
 
-#testimonial p{
-  font-size:32px;
-  font-family: 'Josefin Sans';
-  color:#000;
+#info1 .info-right {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-#testimonial p.customer{
-  font-size:20px;
-  color:#666;
-}
-
-#info1 .info-right{
-  margin-top:0px;
-}
-
-.joaoProfile{
+.joaoProfile {
   margin-left: 1rem;
 }
 
-button{
-  border: 1px solid #393939;
-  background-color: transparent;
-  color: #393939;
-  font-family: Roboto;
-  font-weight: 200;
-  padding: 2rem;
-  width: 200px;
+#info2 {
+margin-top: 50px;
 }
 
-#info2{
-  margin:20px 0 60px 0;
+#contact {
+  background: url(../img/image3.png);
+  padding: 40px;
+  color: #fff;
+  border-top: #333 7px solid;
+  border-bottom: #333 7px solid;
 }
 
-#contact{
-  background:url(../img/image3.png);
-  padding:40px;
-  color:#fff;
-  border-top:#333 7px solid;
-  border-bottom:#333 7px solid;
-}
-
-footer{
-  padding:30px;
+footer {
+  padding: 30px;
 }
 
 /*scroll*/
-
 .icon-scroll,
-.icon-scroll:before{
+.icon-scroll:before {
   position: absolute;
   left: 50%;
-
 }
 
-.icon-scroll{
+.icon-scroll {
   width: 40px;
   height: 70px;
   margin-left: -20px;
   top: 85%;
-  
   box-shadow: inset 0 0 0 2px #707070;
   border-radius: 25px;
 }
 
-.icon-scroll:before{
+.icon-scroll:before {
   content: '';
   width: 8px;
   height: 8px;
@@ -151,13 +132,173 @@ footer{
   animation-name: scroll;
 }
 
-@keyframes scroll{
-  0%{
+@keyframes scroll {
+  0% {
     opacity: 1
   }
-  100%{
+
+  100% {
     opacity: 0;
     transform: translateY(46px)
+  }
 }
+/*scroll*/
+
+
+/*image Grid*/
+.containers {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
 }
-    /*scroll*/
+
+.containers img {
+  width: 100%;
+  height: 100%;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 1;
+}
+
+.big {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+/*image Grid*/
+
+/*Button Animation*/
+.containerbtn {
+  width: 400px;
+  height: 400px;
+  transform: translate(-0%, -0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #393939;
+  outline: none;
+  transition: 2s ease-in-out;
+  color: #393939;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 2s ease-in-out;
+}
+
+.btn:hover {
+  transition: 2s ease-in-out;
+  background: #393939;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -500;
+}
+/*Button Animation*/
+
+/********* Simple or original overlay *******/
+/* Main container */
+.overlay-image {
+  position: relative;
+  width: 100%;
+ }
+ /* Original image */
+ .overlay-image .image {
+  display: block;
+  width: 100%;
+  height: 100%;
+ }
+ /* Original text overlay */
+ .overlay-image .text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+ } 
+
+/********* Overlay on hover *******/
+/* New overlay on hover */
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.248);
+ }
+ /* New overlay appearance on hover */
+ .overlay-image:hover .hover {
+  opacity: 1;
+ }
+
+
+
+ .modal-content{
+   border-radius: 0;
+   border: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .horizontal {
+    grid-column: span 1;
+  }
+
+  .vertical {
+    grid-row: span 1;
+  }
+
+  .big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
