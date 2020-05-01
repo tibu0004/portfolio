@@ -1,5 +1,5 @@
 body {
-  margin-top: 70px;
+  margin-top: 100px;
   font-size: 20px;
   background-color: #F5F5F5;
 }
@@ -13,7 +13,6 @@ h6 {
   font-family: Montserrat;
 }
 
-
 .hello {
   font-size: 110px;
   font-weight: 800;
@@ -21,15 +20,19 @@ h6 {
 }
 
 .projects{
-    font-size: 110px;
+    font-size: 80px;
     font-weight: 800;
     margin-bottom: 40px;
 }
 
+.contact{
+  font-size: 50px;
+  font-weight: 800;
+  color: #393939;
+}
 
 .iam {
   font-size: 50px;
-
 }
 
 p {
@@ -46,16 +49,19 @@ p {
 
 li {
   text-align: right;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
 }
 
 #header {
   position: relative;
   background-color: black;
-  height: 110vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-  margin-top: -150px;
+  margin-top: -100px;
+
 }
 
 #header video {
@@ -73,35 +79,69 @@ li {
   transform: translateX(-50%) translateY(-50%);
 }
 
-hr{
-  width: 80%;
-  border: 1px solid #70707064;
-}
-
-#info1 .info-right {
-  margin-top: 20px;
-  margin-bottom: 50px;
+#info1{
+  margin-top: 80px;
+  margin-bottom: 200px;
 }
 
 .joaoProfile {
   margin-left: 1rem;
 }
 
-#info2 {
-margin-top: 50px;
-}
-
 #contact {
-  background: url(../img/image3.png);
+  margin-top: 110px;
+  background: url(../img/back.png);
+  background-size: 100%;
   padding: 40px;
   color: #fff;
-  border-top: #333 7px solid;
-  border-bottom: #333 7px solid;
+  border-top:white 2px solid;
+  box-shadow: -0px -3px 30px #d8d8d8 ;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #393939;
+  color: white;
+  margin: 60px 5px 5px;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+}
+
+.ottawa{
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #393939;
 }
 
 footer {
-  padding: 30px;
+  padding: 10px;
+  background-color:#393939;
+  color: white;
+  
 }
+
+footer p {
+font-size: 1.5rem;
+letter-spacing: 2px;
+  
+}
+
+
+
 
 /*scroll*/
 .icon-scroll,
@@ -150,10 +190,10 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:95%;
+  width:90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 350px;
   grid-gap: 10px;
   grid-auto-flow: dense;
 }
@@ -204,6 +244,7 @@ footer {
   color: #393939;
   font-size: 18px;
   font-weight: 200;
+  letter-spacing: 7px;
 }
 
 svg {
@@ -244,15 +285,19 @@ svg {
  /* Original text overlay */
  .overlay-image .text {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 500;
   line-height: 1.5em;
-  text-shadow: 2px 2px 2px #000;
-  text-align: center;
+  letter-spacing: 3px;
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  cursor: pointer;
+  margin-left: 20px;
  } 
 
 /********* Overlay on hover *******/
@@ -264,12 +309,13 @@ svg {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(0, 0, 0, 0.248);
+  background-color: rgba(0, 0, 0, 0.413);
  }
  /* New overlay appearance on hover */
  .overlay-image:hover .hover {
   opacity: 1;
  }
+
 
 
 
@@ -288,7 +334,14 @@ svg {
 
 
 
-@media screen and (max-width: 800px) {
+
+
+
+
+@media screen and (max-width:990px) {
+  .containers{
+
+  }
   .horizontal {
     grid-column: span 1;
   }
