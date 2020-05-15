@@ -21,11 +21,6 @@ body {
   padding: 0;
 }
 
-hr{
-  width: 400px;
-
-}
-
 h1,
 h2,
 h3,
@@ -365,6 +360,8 @@ svg {
 
 
 
+
+
  .modal-body{
    padding: 0 !important;
  }
@@ -407,7 +404,7 @@ svg {
   margin-top:10px;
 }
 .firstpart{
-  margin: 4rem 0rem;
+  margin: 5rem 0rem;
 }
 
 .description{
@@ -426,6 +423,20 @@ svg {
 }
 
 
+
+.number{
+  letter-spacing: 0.2rem;
+  font: Roboto;
+  font-size: 17px;
+}
+
+.numberText{
+  font-weight: 700 !important;
+  font: Roboto !important;
+  font-size: 65px;
+  margin-top:-20px;
+  margin-bottom: 10rem;
+}
 
 
 
@@ -460,4 +471,5 @@ svg {
 .modal-lg {
     max-width: 90% !important;
 }
+
 }
