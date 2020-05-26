@@ -479,10 +479,7 @@ svg {
     width: 400% !important;
     height: auto;
   }
-  .nextjob{
-height: 300px !important;
 
-  }
 
 }
 
@@ -493,3 +490,5 @@ height: 300px !important;
 }
 
 }
+
+#loading{position:fixed;top:50%;left:50%;z-index:1104;}
