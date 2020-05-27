@@ -102,6 +102,8 @@ li {
   margin-bottom: 150px;
 }
 
+
+
 .hello {
   font-size: 6rem;
   font-weight: 800;
@@ -506,6 +508,13 @@ svg {
   .logoAnime{
  
     width: 100%;}
+
+    .containers {
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: 250px;
+
+    }
 }
 
 
