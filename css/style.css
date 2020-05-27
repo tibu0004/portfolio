@@ -425,7 +425,6 @@ svg {
 
 .grouptitle{
   padding:2rem;
-  margin-top:10px;
 }
 .firstpart{
   margin: 5rem 0rem;
@@ -512,5 +511,13 @@ svg {
 }
 
 
+
+}
+
+@media screen and (max-width:767px) {
+
+  .firstpart {
+    margin: 1rem 0rem !important;
+}
 
 }
