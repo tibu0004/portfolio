@@ -465,7 +465,10 @@ svg {
 
 
 
-
+.incubator{
+  width: 100% !important;
+  height: auto;
+}
 
 
 
@@ -502,6 +505,7 @@ svg {
       grid-auto-rows: 250px;
 
     }
+
 }
 
 
