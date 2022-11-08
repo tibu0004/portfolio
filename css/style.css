@@ -208,7 +208,6 @@ letter-spacing: 2px;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-auto-rows: 400px;
   grid-gap: 10px;
   grid-auto-flow: dense;
 }
